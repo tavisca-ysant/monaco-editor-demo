@@ -1,5 +1,9 @@
 <div>
+  <div>
+    <button (click)="toggleTheme($event)">{{toggleLabel}}</button>
+  </div>
   <div class="container">
+      
       <!-- <ngx-monaco-editor [options]="editorOptions" [(ngModel)]="code" (onInit)="onInit($event)"></ngx-monaco-editor> -->
       <ngx-monaco-editor class="customMonacoEditor" [options]="editorOptions" [(ngModel)]="code" (ngModelChange)="onChange($event)">
         
