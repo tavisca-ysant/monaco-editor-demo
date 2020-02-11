@@ -3,3 +3,15 @@
       height: calc(100vh - 100px);
     }
   }
+
+  .editorPanel{
+    display: block;
+    position: absolute;
+    top: 0px;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+}
+.editorPanel .customMonacoEditor { /*set automaticLayout*/
+    height: calc(100vh - 0px);
+}

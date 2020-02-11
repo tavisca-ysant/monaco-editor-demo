@@ -1,6 +1,9 @@
 <div>
   <div class="container">
-    <ngx-monaco-editor [options]="editorOptions" [(ngModel)]="code" (onInit)="onInit($event)"></ngx-monaco-editor>
-
+      <!-- <ngx-monaco-editor [options]="editorOptions" [(ngModel)]="code" (onInit)="onInit($event)"></ngx-monaco-editor> -->
+      <ngx-monaco-editor class="customMonacoEditor" [options]="editorOptions" [(ngModel)]="code" (ngModelChange)="onChange($event)">
+        
+      </ngx-monaco-editor>
+      <button (click)="saveCodeChanges($event)">Save</button>
   </div>
 </div>
